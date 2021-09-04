@@ -46,7 +46,7 @@ class FileLog extends File implements LogHandlerInterface
         foreach ($log as $type => $val) {
             $message = [];
             foreach ($val as $msg) {
-                if (!is_string($msg)) {
+                if (!is_string($msg) && !is_array($msg)) {
                     $msg = var_export($msg, true);
                 }
 
