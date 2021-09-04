@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "EasyAdmin\\": "src",
+            "LogTrace\\": "src",
             "Test\\": "tests"
         }
     },
